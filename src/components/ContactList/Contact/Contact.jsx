@@ -28,5 +28,6 @@ const Contact = ({ id, name, number }) => {
     </div>
   );
 };
+console.log(deleteContact);
 
 export default Contact;
