@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: 400px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 12px;
   /* align-items: center; */
