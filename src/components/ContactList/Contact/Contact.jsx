@@ -7,6 +7,9 @@ import styles from "./Contact.module.css";
 const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
+  const removeContact = () => dispatch(deleteContact(id));
+
+  console.log(removeContact);
   return (
     <div className={styles.contact}>
       <div className={styles.contactText}>
@@ -19,15 +22,11 @@ const Contact = ({ id, name, number }) => {
           {number}
         </span>
       </div>
-      <button
-        onClick={() => dispatch(deleteContact(id))}
-        className={styles.btn}
-      >
+      <button onClick={removeContact} className={styles.btn}>
         Delete
       </button>
     </div>
   );
 };
-console.log(deleteContact);
 
 export default Contact;

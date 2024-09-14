@@ -1,10 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import contactData from "../contactData.json";
 
-const initialState = {
-  items: contactData,
-};
-console.log(contactData);
+const initialState = contactData;
 
 const contactsSlice = createSlice({
   name: "contacts",
@@ -14,9 +11,7 @@ const contactsSlice = createSlice({
       state.items.push(action.payload);
     },
     deleteContact: (state, action) => {
-      state.items = state.items.filter(
-        (contact) => contact.id !== action.payload
-      );
+      state.items = state.items.filter((item) => item.id !== action.payload);
     },
   },
 });
