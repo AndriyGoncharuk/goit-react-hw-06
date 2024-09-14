@@ -10,7 +10,7 @@
   padding: 10px;
 }
 
-.contactText {
+.text {
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,14 @@
   padding: 4px;
 }
 
-.contactIcon {
+.btn:hover {
+  font-size: 14px;
+  background-color: #e0373f;
+  letter-spacing: 0.2em;
+  box-shadow: 0 0 10px #e0373f;
+}
+
+.icon {
   margin-right: 8px;
   fill: rgb(33, 16, 89);
 }

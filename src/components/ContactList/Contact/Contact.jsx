@@ -10,17 +10,17 @@ const Contact = ({ contact }) => {
 
   const removeContact = () => dispatch(deleteContact(id));
   return (
-    <div className={styles.box}>
-      <ul className={styles.list}>
-        <li className={styles.item}>
+    <div className={styles.contact}>
+      <div className={styles.text}>
+        <span>
           <FaUser className={styles.icon} />
-          <p className={styles.text}>{name}</p>
-        </li>
-        <li className={styles.item}>
+          {name}
+        </span>
+        <span>
           <FaPhoneAlt className={styles.icon} />
-          <p className={styles.text}>{number}</p>
-        </li>
-      </ul>
+          {number}
+        </span>
+      </div>
       <button type="button" className={styles.btn} onClick={removeContact}>
         Delete
       </button>
