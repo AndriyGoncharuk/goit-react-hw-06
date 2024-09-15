@@ -7,12 +7,16 @@ import { FaAddressBook } from "react-icons/fa";
 const App = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>
-        Phonebook <FaAddressBook />
-      </h1>
-      <ContactForm />
-      <SearchBox />
-      <ContactList />
+      <div className={styles.formbox}>
+        <h1 className={styles.header}>
+          Phonebook <FaAddressBook />
+        </h1>
+        <ContactForm />
+        <SearchBox />
+      </div>
+      <div className={styles.list}>
+        <ContactList />
+      </div>
     </div>
   );
 };
